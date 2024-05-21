@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-image: url('prueba.gif'); /* Ruta de tu imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(236, 223, 223, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+            background-color: #010208;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .btn:hover {
+            background-color: #120392;
+            color: #ffffff;
+            transform: scale(1.05);
+        }
+        h1 {
+        color: white; /* Color de texto blanco */
+        font-size: 36px; /* Tamaño de la letra aumentado */
+        border: 2px solid black; /* Borde negro */
+        margin: 0; /* Elimina márgenes predeterminados */
+        padding: 10px; /* Espacio interior para no tocar el borde */
+        background: #000; /* Fondo negro para el título */
+        text-align: center;
+    }
+        #rocket {
+            position: fixed;
+            bottom: -50px; /* Start off screen */
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 50px;
+            display: none; /* Hidden by default */
+            animation: fly 4s linear forwards;
+        }
+        @keyframes fly {
+            0% { bottom: -50px; }
+            100% { bottom: 100%; }
+        }
+    </style>
+</head>
+<center><h1>Sistema de control de versiones en la nube</h1></center><br>
+<body>
+    <div id="sfcx2qx26spzq59xnanqnl5q5be4zaw11yn"></div><script type="text/javascript" src="https://counter11.optistats.ovh/private/counter.js?c=x2qx26spzq59xnanqnl5q5be4zaw11yn&down=async" async></script>
+    <div class="container">
+        <button class="btn" onclick="showDefinition('def30'); launchRocket()">Competencia específica a desarrollar</button>
+        <button class="btn" onclick="showDefinition('def31'); launchRocket()">3.1. Qué es y para qué sirve</button>
+        <button class="btn" onclick="showDefinition('def32'); launchRocket()">3.2. Arquitectura interna de GitHub</button>
+        <button class="btn" onclick="showDefinition('def33'); launchRocket()">3.3. Configuración de GitHub</button>
+        <button class="btn" onclick="showDefinition('def34'); launchRocket()">3.4. Operaciones básicas de GitHub</button>
+
+        <div id="def30" style="display: none;">
+            <h2>Copetencia especifica a desarrollar</h2>
+            <p>Cuando hablamos de desarrollar competencias específicas para trabajar con sistemas de control de versiones en la nube, nos referimos a habilidades técnicas y de gestión que permiten a los usuarios aprovechar al máximo estas herramientas. Aquí te listo algunas competencias clave que deberían desarrollarse:</p>
+            <h2>1. Fundamentos de Control de Versiones</h2>
+            <p>-Entendimiento de los conceptos básicos: Comprender qué es un commit, branch, merge, pull request, etc.</p>
+            <p>-Modelos de flujo de trabajo: Aprender y aplicar modelos de flujo de trabajo comunes como Git Flow, GitHub Flow, o GitLab Flow, adecuados para diferentes tipos de proyectos.</p>
+            <h2>2. Uso Avanzado de Git</h2>
+            <p>-Manejo de branches: Crear, cambiar y fusionar branches de forma efectiva.</p>
+            <p>-Resolución de conflictos: Aprender a manejar y resolver conflictos que surgen al fusionar código.</p>
+            <p>-Rebase y merge: Entender cuándo usar rebase en lugar de merge para mantener un historial de proyecto limpio.</p>
+            <p>-Cherry-picking: Seleccionar y mover commits específicos de una branch a otra.</p>
+            <h2>3. Automatización y CI/CD</h2>
+            <p>-Integración continua (CI): Configurar y usar herramientas de CI para automatizar la compilación y las pruebas del código cada vez que se hace un commit.</p>
+            <p>-Entrega continua (CD): Automatizar la entrega de código a los entornos de producción o staging tras pruebas exitosas.</p>
+            <p>-Webhooks y triggers: Configurar disparadores para automatizar flujos de trabajo basados en eventos del repositorio.</p>
+            <h2>4. Seguridad y Administración de Permisos</h2>
+            <p>-Control de acceso: Aprender a gestionar quién puede leer y modificar el código en el repositorio.</p>
+            <p>-Seguridad de los repositorios: Implementar buenas prácticas de seguridad para proteger el código, como revisiones de seguridad, control de versiones de dependencias, etc.
+            </p>
+            <p>-Uso de claves SSH: Configurar y usar claves SSH para una autenticación segura y automatizada a los repositorios.</p>
+            <h2>5. Colaboración y Gestión de Proyectos</h2>
+            <p>-Revisión de código: Participar y realizar revisiones de código efectivas.</p>
+            <p>-Gestión de proyectos: Utilizar herramientas de seguimiento de problemas, boards de proyectos y etiquetas para organizar el trabajo y la colaboración.</p>
+            <p>-Documentación: Mantener documentación adecuada del código y del repositorio para facilitar la comprensión y el trabajo en equipo.</p>
+            <h2>6. Uso de Servicios en la Nube Específicos</h2>
+            <p>-Herramientas específicas: Profundizar en el uso de plataformas específicas como GitHub, GitLab, Bitbucket o Azure Repos.</p>
+            <p>-Integraciones: Aprender a integrar estas plataformas con otras herramientas y servicios, como sistemas de monitorización, herramientas de planificación, etc.</p>
+            <h2>7. Backup y Recuperación</h2>
+            <p>-Estrategias de backup: Aprender a crear estrategias de respaldo para los repositorios.</p>
+            <p>-Recuperación de desastres: Implementar y practicar planes de recuperación de desastres para el código y la configuración.</p>
+
+        </div>
+        <div id="def31" style="display: none;">
+            <h2>3.1. Qué es y para qué sirve</h2>
+            <div style="position: relative; width: 100%; height: 0; padding-top: 56.2225%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGDkScQigg&#x2F;IKqZhH42uEzekp0DpbCVww&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+
+<h2>EJERCICIOS</h2>
+<center><iframe style="max-width:100%" src="https://wordwall.net/embed/play/72394/627/637" width="500" height="380" frameborder="0" allowfullscreen></iframe></center>
+<center><h2>JOSE JUAN GARCIA FLORES GRUPO "C"</h2></center>
+        </div>
+        <div id="def32" style="display: none;">
+            <h2>3.2. Arquitectura interna de GitHub</h2>
+            <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGDlXsn0jM&#x2F;3mSZGBUkuu5x6As07B5grQ&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+
+      
+        <h2>EJERCICIOS</h2>
+        <center><iframe style="max-width:100%" src="https://wordwall.net/embed/play/72396/891/117" width="500" height="380" frameborder="0" allowfullscreen></iframe></center>
+        <center><h2>JOSE JUAN GARCIA FLORES GRUPO "C"</h2></center>
+    </div>
+        <div id="def33" style="display: none;">
+            <h2>3.3. Configuración de GitHub</h2>
+            <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGDkWWCtfs&#x2F;QJwYQMpr9BnhTcyGEz5mAg&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+<h2>EJERCICIOS</h2>
+<center><iframe style="max-width:100%" src="https://wordwall.net/embed/play/72424/058/346" width="500" height="380" frameborder="0" allowfullscreen></iframe></center>
+<center><h2>JOSE JUAN GARCIA FLORES GRUPO "C"</h2></center>
+        </div>
+        <div id="def34" style="display: none;">
+            <h2>3.4. Operaciones básicas de GitHub</h2>
+            <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGDq89hdFY&#x2F;1cRwwUKzAbo_mPkthJPt8g&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+<h2>EJERCICIOS</h2>
+<center><iframe style="max-width:100%" src="https://wordwall.net/embed/play/72424/594/587" width="500" height="380" frameborder="0" allowfullscreen></iframe></center>
+<center><h2>JOSE JUAN GARCIA FLORES GRUPO "C"</h2></center>
+</div>
+    </div>
+    <span id="rocket">🚀</span>
+
+    <script>
+        function showDefinition(id) {
+            var definitions = document.querySelectorAll('[id^="def"]');
+            definitions.forEach(function(definition) {
+                if (definition.id === id) {
+                    definition.style.display = 'block';
+                } else {
+                    definition.style.display = 'none';
+                }
+            });
+        }
+
+        function launchRocket() {
+            var rocket = document.getElementById('rocket');
+            rocket.style.display = 'inline'; // Make the rocket visible
+            rocket.style.animation = 'none'; // Reset animation
+            rocket.offsetHeight; // Trigger reflow
+            rocket.style.animation = ''; // Restart animation
+        }
+
+        // Mostrar automáticamente la definición para "def30" al cargar la página
+        window.onload = function() {
+            showDefinition('def30');
+        }
+
+        
+
+    </script>
+
+
+</body>
+</html>
