@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div class="logo1">
+        <img src="{{ url_for('static', filename='logos1.jpg') }}" alt="Logo Empresa" width="100">
+    </div>
+    <div class="logo2">
+        <img src="{{ url_for('static', filename='logos1.jpg') }}" alt="Logo Empresa" width="100">
+    </div>
+    <title>Registro de Asistencias</title>
+    <style>
+        
+        .logo1 {
+            position: fixed;
+            right: 0;
+            left: 0;
+            text-align: right;
+        }
+        .logo2 {
+            position: fixed;
+            right: 0;
+            left: 0;
+            text-align: left;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background-color: #f0f8ff; /* Color de fondo */
+            padding: 10px; /* Espaciado interno */
+            text-align: right; /* Alinear a la derecha */
+            color: #000080; /* Color del texto */
+        }
+        body {
+            background-color: #f0f8ff;
+            color: #000080;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #000080;
+            padding: 8px;
+        }
+        th, td {
+            border: 1px solid #000080;
+            padding: 8px;
+            color: rgb(3, 2, 2); /* Color del texto */
+        }
+        th {
+            background-color: rgb(32, 39, 226); /* Color de fondo */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo Empresa" width="100">
+        </div>
+        <h1>MECANICA INTEGRAL</h1><br>
+        <h1>Registro de Asistencias de Soldadores</h1>
+        
+        <form action="/registrarsoldador" method="post">
+            <label for="codigo">Inserte su codigo:</label>
+        <input type="text" id="codigo" name="codigo" required>
+        <button type="submit">Registrar Asistencia</button>
+    </form>
+    {% if resultado %}
+    <p>{{ resultado }}</p>
+    {% endif %}
+    <p><a href="{{ url_for('index') }}">Volver al Inicio</a></p>
+    
+    </div><br>
+     
+       
+   
+    <footer>
+        Integrantes del Proyecto: ING. Jose Juan Garcia Flores, ING. Ismael Florencio Balbuena
+    </footer>
+
+ 
+</body>
+</html>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<asistencias>
+	<asistencia>
+		<nombre>Jose Juan Garcia Flores</nombre>
+		<estado>Faltó</estado>
+		<fecha_hora>2024-05-11 19:16:25</fecha_hora>
+	</asistencia>
+	<asistencia>
+		<nombre>Jose Juan Garcia Flores</nombre>
+		<estado>Retraso</estado>
+		<fecha_hora>2024-05-11 19:37:49</fecha_hora>
+	</asistencia>
+	<asistencia>
+		<nombre>Jose Juan Garcia Flores</nombre>
+		<estado>Retraso</estado>
+		<fecha_hora>2024-05-11 19:47:42</fecha_hora>
+	</asistencia>
+	<asistencia>
+		<nombre>Jose Juan Garcia Flores</nombre>
+		<estado>Retraso</estado>
+		<fecha_hora>2024-05-11 19:49:06</fecha_hora>
+	</asistencia>
+	<asistencia>
+		<nombre>Jorge Armando Perez Garcia</nombre>
+		<estado>Retraso</estado>
+		<fecha_hora>2024-05-11 19:49:23</fecha_hora>
+	</asistencia>
+	<asistencia>
+		<nombre>Jose Juan Garcia Flores</nombre>
+		<estado>Asistió</estado>
+		<fecha_hora>2024-05-11 20:01:14</fecha_hora>
+	</asistencia>
+	<asistencia>
+		<nombre>Jorge Armando Perez Garcia</nombre>
+		<estado>Asistió</estado>
+		<fecha_hora>2024-05-11 20:07:46</fecha_hora>
+	</asistencia>
+</asistencias>

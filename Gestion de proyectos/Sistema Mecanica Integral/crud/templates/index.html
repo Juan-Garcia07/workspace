@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div class="logo1">
+        <img src="{{ url_for('static', filename='logos1.jpg') }}" alt="Logo Empresa" width="100">
+    </div>
+    <div class="logo2">
+        <img src="{{ url_for('static', filename='logos1.jpg') }}" alt="Logo Empresa" width="100">
+    </div>
+    <title>Lista de Empleados</title>
+    <style>
+        .logo1 {
+            position: fixed;
+            right: 0;
+            left: 0;
+            text-align: right;
+        }
+        .logo2 {
+            position: fixed;
+            right: 0;
+            left: 0;
+            text-align: left;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+        .button-container {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .button {
+        background-color: #01365a; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition: background-color 0.3s, box-shadow 0.3s;
+        border-radius: 8px;
+        box-shadow: 0 4px #999;
+    }
+
+    .button:hover {
+        background-color: #000000;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+    .button:active {
+        background-color: #000000;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+        footer {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background-color: #e9eef3; /* Color de fondo */
+            padding: 10px; /* Espaciado interno */
+            text-align: right; /* Alinear a la derecha */
+            color: #000080; /* Color del texto */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo Empresa" width="150">
+        </div>
+        <h1>MECANICA INTEGRAL</h1>
+        <div class="button-container">
+            <a href="/mecanicos" class="button">Mecánicos</a>
+            <a href="/soldadores" class="button">Soldadores</a>
+            <a href="/lavadores" class="button">Lavadores</a>
+        </div><br><br>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='usuario.png') }}" alt="Logo Registro" width="300">
+        </div>
+    
+    <footer>
+        Integrantes del Proyecto: ING. Jose Juan Garcia Flores, ING. Ismael Florencio Balbuena
+    </footer>
+</body>
+</html>

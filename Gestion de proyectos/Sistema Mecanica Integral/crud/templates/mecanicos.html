@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div class="logo1">
+        <img src="{{ url_for('static', filename='logos1.jpg') }}" alt="Logo Empresa" width="100">
+    </div>
+    <div class="logo2">
+        <img src="{{ url_for('static', filename='logos1.jpg') }}" alt="Logo Empresa" width="100">
+    </div>
+    <title>Mecánicos</title>
+    <style>
+        .logo1 {
+            position: fixed;
+            right: 0;
+            left: 0;
+            text-align: right;
+        }
+        .logo2 {
+            position: fixed;
+            right: 0;
+            left: 0;
+            text-align: left;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background-color: #f0f8ff; /* Color de fondo */
+            padding: 10px; /* Espaciado interno */
+            text-align: right; /* Alinear a la derecha */
+            color: #000080; /* Color del texto */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo Empresa" width="100">
+        </div>
+    <h1>Lista de Mecánicos</h1>
+    <!-- Aquí puedes mostrar la lista de mecánicos -->
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Acciones</th>
+        </tr>
+        {% for mecanico in mecanicos %}
+        <tr>
+            <td>{{ mecanico['nombre'] }}</td>
+            <td>
+                <a href="/mecanicos/{{ mecanico['id'] }}/editar"><img src="/static/editar-codigo.png" alt="Editar" style="width: 20px; height: 20px;"></a>
+                | 
+                <a href="{{ url_for('eliminar_mecanico', id=mecanico['id']) }}" onclick="return confirm('¿Estás seguro de que quieres eliminar este mecánico?');"><img src="{{ url_for('static', filename='basura.png') }}" alt="Eliminar" style="width: 20px; height: 20px;"></a>
+
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+    <h2>Agregar Mecanico</h2>
+    <form action="/agregar" method="post">
+        <input type="text" name="nombre" placeholder="Nombre del mecanico" required>
+        <input type="text" name="codigo" placeholder="Agregar codigo" required>
+        <button type="submit">Agregar</button>
+    </form>
+    </div><br>
+    <!-- Agregar el botón para generar y descargar el PDF -->
+    <form action="/generar_pdfmecanico">
+        <button type="submit" style="background: none; border: none;">
+            <img src="{{ url_for('static', filename='pdf.png') }}" alt="Icono PDF" style="width: 24px; height: 24px;">
+            Generar PDF
+        </button>
+    </form>
+    <form action="/generar_xmlmecanico">
+        <button type="submit" style="background: none; border: none;">
+            <img src="{{ url_for('static', filename='xml.png') }}" alt="Icono GRAFICA" style="width: 24px; height: 24px;">
+            Generar XML
+        </button>
+    </form>
+    <form action="/grafico_asistencias_mecanico">
+        <button type="submit" style="background: none; border: none;">
+            <img src="{{ url_for('static', filename='barra-grafica.png') }}" alt="Icono GRAFICA" style="width: 24px; height: 24px;">
+            Generar Gráfica
+        </button>
+    </form>
+    <footer>
+        Integrantes del Proyecto: ING. Jose Juan Garcia Flores, ING. Ismael Florencio Balbuena
+    </footer>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div class="logo1">
+        <img src="{{ url_for('static', filename='logos1.jpg') }}" alt="Logo Empresa" width="100">
+    </div>
+    <div class="logo2">
+        <img src="{{ url_for('static', filename='logos1.jpg') }}" alt="Logo Empresa" width="100">
+    </div>
+    <title>Registro de Asistencias</title>
+    <style>
+        
+        .logo1 {
+            position: fixed;
+            right: 0;
+            left: 0;
+            text-align: right;
+        }
+        .logo2 {
+            position: fixed;
+            right: 0;
+            left: 0;
+            text-align: left;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background-color: #f0f8ff; /* Color de fondo */
+            padding: 10px; /* Espaciado interno */
+            text-align: right; /* Alinear a la derecha */
+            color: #000080; /* Color del texto */
+        }
+        body {
+            background-color: #f0f8ff;
+            color: #000080;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #000080;
+            padding: 8px;
+        }
+        th, td {
+            border: 1px solid #000080;
+            padding: 8px;
+            color: rgb(3, 2, 2); /* Color del texto */
+        }
+        th {
+            background-color: rgb(32, 39, 226); /* Color de fondo */
+        }
+        .button {
+        background-color: #01365a; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition: background-color 0.3s, box-shadow 0.3s;
+        border-radius: 8px;
+        box-shadow: 0 4px #999;
+    }
+
+    .button:hover {
+        background-color: #000000;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+    .button:active {
+        background-color: #000000;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo Empresa" width="150">
+        </div>
+        <h1>MECANICA INTEGRAL</h1><br>
+        <h1>Registro de Asistencias</h1>
+        <div class="button-container">
+            <a href="/registrarmecanico" class="button">Mecánicos</a>
+            <a href="/registrarsoldador" class="button">Soldadores</a>
+            <a href="/registrarlavador" class="button">Lavadores</a>
+        </div><br><br>
+
+        <div class="logo">
+            <img src="{{ url_for('static', filename='usuario.png') }}" alt="Logo Registro" width="300">
+        </div>
+        
+       
+   
+    <footer>
+        Integrantes del Proyecto: ING. Jose Juan Garcia Flores, ING. Ismael Florencio Balbuena
+    </footer>
+
+ 
+</body>
+</html>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<asistencias>
+	<asistencia>
+		<nombre>Don Ramon Perez Mata</nombre>
+		<estado>Asistió</estado>
+		<fecha_hora>2024-05-11 20:12:29</fecha_hora>
+	</asistencia>
+	<asistencia>
+		<nombre>Don Ramon Perez Mata</nombre>
+		<estado>Retraso</estado>
+		<fecha_hora>2024-05-11 20:32:28</fecha_hora>
+	</asistencia>
+</asistencias>
